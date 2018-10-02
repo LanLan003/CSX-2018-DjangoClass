@@ -10,7 +10,7 @@
       width: 100%;
       z-index: 2;
       background-color: #30556E;
-}
+    }
 
     header h1 {
       font-size: 52px;
@@ -24,7 +24,7 @@
     .index {
       height: 70px;
       width: 300px;
-      position:fixed;
+      position: fixed;
       top: 85px;
       margin: 60px 40px;
       padding: 30px;
@@ -34,6 +34,23 @@
       border-color: #77c8fe;
     }
 
+    .destiny {
+      height: 120px;
+      width: 310px;
+      position: fixed;
+      top: 235px;
+      margin: 60px 40px;
+      padding: 25px;
+      font-size: 20px;
+      border: 3px dotted;
+      border-radius: 7px;
+      border-color: #77c8fe;
+    }
+
+    .destiny p {
+      color: #30556E;
+      text-shadow: 1px 0px #FFC;
+    }
 
     .new-post {
         width:60%;
