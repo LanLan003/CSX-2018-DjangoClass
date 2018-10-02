@@ -22,7 +22,11 @@
   </div>
   <div class="destiny">
     <p><strong>本日運勢</strong></p>
-
+    <p>
+      {% for i in destiny%}
+          {{ i }}
+      {% endfor %}
+    </p>
   </div>
   <div class="post" id="B1">
     <div class="content">
