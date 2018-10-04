@@ -45,14 +45,10 @@ vii. 了解本週的重點問題
 **Mission**
 i. 共學的時候，跟更多同學互動，開始認識大家，記住一些人的名字\
 ii. 學會 Python 基礎\
-iii. 學會 Django Template Language 基礎
-
-vi. 了解 views 如何和 template 進行互相控制，並且修改自己的網頁(具體目標待確認)
-
-v. 確認：你可以用 for loop 來顯示東西 (修改 template 的 html，加入模板語言)
-
-vi. 把新的結果 push 到上週新開的 Github Repo + 把結果上傳至 Heroku，且確認 Heroku 上面的版本跟本機端的是一樣的
-
+iii. 學會 Django Template Language 基礎\
+vi. 了解 views 如何和 template 進行互相控制，並且修改自己的網頁(具體目標待確認)\
+v. 確認：你可以用 for loop 來顯示東西 (修改 template 的 html，加入模板語言)\
+vi. 把新的結果 push 到上週新開的 Github Repo + 把結果上傳至 Heroku，且確認 Heroku 上面的版本跟本機端的是一樣的\
 vii. 反省一下 － 你到底有沒有學習的成就感？（提出幾個重點問題給你參考）
 
 
