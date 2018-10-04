@@ -3,11 +3,12 @@ from django.contrib.auth import authenticate
 from django.contrib import auth
 from django.http import HttpResponse
 from django.contrib.auth.models import User
+import random
 
 
 def index(request):
 	destiny = {
-		'love': ["晚上約朋友一起吃飯，分享食物的瞬間會讓彼此的情誼更加深厚。",
+	    'love': ["晚上約朋友一起吃飯，分享食物的瞬間會讓彼此的情誼更加深厚。",
 				 "上網頻繁者碰到知己的機率很高，相同價值觀的碰撞易生出愛的火花。",
 				 "因為工作忙而冷落另一半，多給對方一些關懷，事業愛情才不會兩頭誤。",
 				 "與伴侶在一起時，不要把工作上的不滿情緒發洩在對方身上，對感情易產生負面影響。",
@@ -42,6 +43,6 @@ def index(request):
 		    	 "事業上如果可以拋開一切束縛，走進新的領域，相信能得到不錯的成績。",
 		    	 "投資運佳，可試著去認識新興投資產品。",
 		    	 "太專注於賺錢，讓自己的身體有點吃不消，多注意一下自己的飲食習慣。",
-		    	 "工作能力會有較大提升，頗受好評。"]
-	}
-	return render(request, 'lanlanblablabla.html')
+		    	 "工作能力會有較大提升，頗受好評。"]}
+	destiny = random.sample(destiny['love'],2) + random.sample(destiny['work'],2)
+	return render(request, 'lanlanblablabla.html',{'destiny':destiny})

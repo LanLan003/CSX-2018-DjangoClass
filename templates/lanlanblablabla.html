@@ -23,9 +23,8 @@
   <div class="destiny">
     <p><strong>本日運勢</strong></p>
     <p>
-      {% for words in destiny %}
-          <p>{{ words.love }}</p>
-          <p>{{ words.work }}</p>
+      {% for item in destiny %}
+          {{ item }}
       {% endfor %}
     </p>
   </div>
