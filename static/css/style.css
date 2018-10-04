@@ -35,21 +35,26 @@
     }
 
     .destiny {
-      height: 120px;
       width: 310px;
       position: fixed;
       top: 235px;
       margin: 60px 40px;
       padding: 25px;
-      font-size: 20px;
       border: 3px dotted;
       border-radius: 7px;
       border-color: #77c8fe;
     }
 
-    .destiny p {
+    .destiny .title {
+      font-size: 20px;
       color: #30556E;
-      text-shadow: 1px 0px #FFC;
+      text-shadow: 1px 0px #FFF;
+      padding: 0 0 5px 0;
+    }
+
+    .destiny .random {
+      font-size: 16px;
+      color: #383838;
     }
 
     .new-post {
