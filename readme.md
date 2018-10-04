@@ -43,6 +43,7 @@ vii. 了解本週的重點問題
 
 
 **Mission**
+
 i. 共學的時候，跟更多同學互動，開始認識大家，記住一些人的名字\
 ii. 學會 Python 基礎\
 iii. 學會 Django Template Language 基礎\
