@@ -29,7 +29,7 @@ ii. basic HTML/CSS
 **Mission**
 
 i. 搞定『全段著手開發的流程』10個步驟
-   教學影片： https://goo.gl/fJNuYw\
+   教學影片： https://goo.gl/fJNuYw \
 ii. 學會 HTML + CSS 基礎\
 iii. 在本機端開發，將 view.py 修改後透過 Django 產生靜態頁面，且自己打開 localhost (本機端) 的網址做確認內容是正確的\
 iv. 把新的結果 push 到上週新開的 Github Repo\
