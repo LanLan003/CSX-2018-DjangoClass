@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'helloworld.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db',
-        'USER': 'LanLan',
-        'PASSWORD': '0123csxQQ',
+        'NAME': 'blabladb',
+        'USER': 'Lanlan',
+        'PASSWORD': '',
         'HOST': '',
         'PORT': '',
     }

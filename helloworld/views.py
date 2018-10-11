@@ -3,13 +3,13 @@ from django.contrib.auth import authenticate
 from django.contrib import auth
 from django.http import HttpResponse
 from django.contrib.auth.models import User
-import random
+import random, datetime
 from guestbook.models import Article, Message
 
 
 def index(request):
 	
-	a1 = Article.objects.create(user_name = '期中崩潰人', content = '廢文連發')
+	a1 = Article.objects.create(user_name = '期中崩潰人', content = '廢文連發 '+str(datetime.datetime.now()))
 	db = Article.objects.all()
 
 	destiny = {
