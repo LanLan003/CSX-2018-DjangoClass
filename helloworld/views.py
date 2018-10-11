@@ -4,9 +4,14 @@ from django.contrib import auth
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 import random
+from guestbook.models import Article, Message
 
 
 def index(request):
+	
+	a1 = Article.objects.create(user_name = '期中崩潰人', content = '廢文連發')
+	db = Article.objects.all()
+
 	destiny = {
 	    'love': ["晚上約朋友一起吃飯，分享食物的瞬間會讓彼此的情誼更加深厚。",
 				 "上網頻繁者碰到知己的機率很高，相同價值觀的碰撞易生出愛的火花。",
@@ -45,4 +50,6 @@ def index(request):
 		    	 "太專注於賺錢，讓自己的身體有點吃不消，多注意一下自己的飲食習慣。",
 		    	 "工作能力會有較大提升，頗受好評。"]}
 	destiny = random.sample(destiny['love'],2) + random.sample(destiny['work'],2)
-	return render(request, 'lanlanblablabla.html',{'destiny':destiny})
+
+												  #{'destiny':destiny}
+	return render(request, 'lanlanblablabla.html',locals())

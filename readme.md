@@ -14,6 +14,15 @@ ii. install Django,Anaconda
 
 iii. learn heroku and git
 
-**Homework:**
+
+### Week2
+
+**In class:**
+
+i. live demo last week’s example
+
+ii. basic HTML/CSS
+
+## **Homework:**
 
 link : https://lanhelloworldtest.herokuapp.com/

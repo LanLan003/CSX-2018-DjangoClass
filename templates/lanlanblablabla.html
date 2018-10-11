@@ -47,8 +47,8 @@
         <input type="text" name="c.msg" class="msg" placeholder="...">
         <input type="submit" class="c.submit" value="回覆">
       </div>
-    </div>
-    <div class="post" id="B2">
+  </div>
+  <div class="post" id="B2">
     <div class="content">
       <span class="name"><strong>日座樂灣發比食</strong></span>
       <p>【我一真燈於相平因成足】<br><br>了利提身，盡也小實心子長地北則比光己清別，<br>本樣濟主使安學就口太母地、變視包有，<br>算目團民參果紅走年提它甚出日們再美灣自士達不可男個知眼計一五。<br>熱些亮，是花喜，情明了於。<br>要得濟預又童動國意不技才等！<br>年充車國的法、任德都即力爭裡。</p>
@@ -68,6 +68,19 @@
       </div>
     </div>
   </div>
+  {% for j in db %}
+  <div class="post" id="B3">
+    <div class="content">
+      <span class="name"><strong>{{ j.user_name }}</strong></span>
+      <p>{{ j.content }}</p>
+    </div>
+      <div class="new-commend">
+        <input type="text" name="c.name" class="name" placeholder="暱稱">
+        <input type="text" name="c.msg" class="msg" placeholder="...">
+        <input type="submit" class="c.submit" value="回覆">
+      </div>
+  </div>
+  {% endfor %}
 </body>
 
 </html>
