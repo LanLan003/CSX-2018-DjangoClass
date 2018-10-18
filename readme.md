@@ -6,14 +6,14 @@
 
 ## Week1
 
-### In class:
+#### In class:
 <ol>
   <li>register Heroku,Github</li>
   <li>install Django,Anaconda</li>
   <li>learn heroku and git</li>
 </ol>
 
-### Mission
+#### Mission
 <ol>
   <li>學會 Command-line 操作基礎</li>
   <li>裝好 Heroku + 跑讓本幾段跑出來</li>
@@ -24,13 +24,13 @@
 
 ## Week2
 
-### In class:
+#### In class:
 <ol>
   <li>live demo last week’s example</li>
   <li>basic HTML/CSS</li>
 </ol>
 
-### Mission
+#### Mission
 <ol>
   <li>搞定『全段著手開發的流程』10個步驟
   教學影片： https://goo.gl/fJNuYw</li>
@@ -44,10 +44,10 @@
 
 ## Week3
 
-### In class:
+#### In class:
 
 
-### Mission
+#### Mission
 <ol>
   <li>共學的時候，跟更多同學互動，開始認識大家，記住一些人的名字</li>
   <li>學會 Python 基礎</li>
@@ -60,10 +60,10 @@
 
 ## Week4
 
-### In class:
+#### In class:
 
 
-### Mission
+#### Mission
 <ol>
   <li>共學的時候，儘量認識三個陌生同學，問他們一兩個問題，看看能不能聊得來（也不一定需要聊得來啦～）</li>
   <li>確認你會打開本機端的伺服器且在本機端開發： python manage.py runserver</li>
@@ -81,10 +81,10 @@
 
 ## Week5
 
-### In class:
+#### In class:
 
 
-### Mission
+#### Mission
 <ol>
   <li>這次要新學習的概念： Django 裡面的 Form, Request, URL, GET + POST</li>
   <li>瞭解：如何從 view 裡面呼叫 Model 來更改資料庫裡面的資料？</li>
