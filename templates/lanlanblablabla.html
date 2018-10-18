@@ -11,10 +11,10 @@
   <header>
       <h1>BlaBlaBla</h1>
   </header>
-  <div class="new-post">
+  <div id="new-post">
     <input type="text" name="name" class="name" placeholder="暱稱">
     <input type="text" name="msg" class="msg" placeholder="說點什麼？">
-    <input type="submit" class="submit" value="開啟新討論串">
+    <input type="submit" name="button" class="button" value="開啟新討論串">
   </div>
   <div class="index">
     <a href="#B1">B1</a><br>
@@ -75,9 +75,11 @@
       <p>{{ j.content }}</p>
     </div>
       <div class="new-commend">
-        <input type="text" name="c.name" class="name" placeholder="暱稱">
-        <input type="text" name="c.msg" class="msg" placeholder="...">
-        <input type="submit" class="c.submit" value="回覆">
+        <form id="send-form" action="." method="post">
+          <input type="text" name="name" class="name" placeholder="暱稱">
+          <input type="text" name="msg" class="msg" placeholder="...">
+          <input type="submit" name="button" value="回覆">
+      </form>
       </div>
   </div>
   {% endfor %}

@@ -57,7 +57,7 @@
       color: #383838;
     }
 
-    .new-post {
+    #new-post {
         width:60%;
         position: relative;
         top: 115px;
@@ -65,23 +65,23 @@
         text-align: center;
     }
 
-    .new-post input {
+    #new-post .name, .msg, .button {
         display: inline-block;
-        margin: 30px 10px 50px 10px;
+        margin: 30px 15px 50px 15px;
         padding: 6px;
         font-size: 18px;
     }
 
-    .new-post .name {
+    #new-post input[name=name] {
         width: 10%;
     }
  
-    .new-post .msg {
+    #new-post input[name=msg] {
         width: 60%;
     }
  
-    .new-post .button {
-        width: 10%;
+    #new-post input[name=button] {
+        width: 12%;
     }
 
 
