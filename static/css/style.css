@@ -150,27 +150,27 @@
         font-size: 16px;
     }
 
-    #new-commend {
+    .new-commend {
         width:100%;
         padding: 5px 20px;
         text-align: left;
     }
     
-    #new-commend input {
+    .new-commend input {
         display: inline-block;
         margin: 15px 0px 15px 5px;
         padding: 2px;
         font-size: 14px;
     }
 
-    #new-commend input[name=name] {
+    .new-commend input[name=name] {
         width: 10%;
     }
  
-    #new-commend input[name=msg] {
+    .new-commend input[name=msg] {
         width: 60%;
     }
  
-    #new-commend input[name=button] {
+    .new-commend input[name=button] {
         width: 10%;
     }
