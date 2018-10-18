@@ -21,6 +21,7 @@
   <li>finish the class assignment</li>
 </ol>
 
+
 ## Week2
 
 ### In class:
@@ -57,6 +58,41 @@
   <li>反省一下 － 你到底有沒有學習的成就感？（提出幾個重點問題給你參考）</li>
 </ol>
 
+## Week4
+
+### In class:
+
+
+### Mission
+<ol>
+  <li>共學的時候，儘量認識三個陌生同學，問他們一兩個問題，看看能不能聊得來（也不一定需要聊得來啦～）</li>
+  <li>確認你會打開本機端的伺服器且在本機端開發： python manage.py runserver</li>
+  <li>設定資料庫（我們推薦： PostgreSQL）</li>
+  <li>設定你第一個 model</li>
+  <li>用 django migrate 的指令來建立資料庫中新的 Schema</li>
+  <li>學會如何用 django 的指令來控制資料庫的內容（尤其是：確認說你會加資料進去）</li>
+  <li>複習 Python 基礎：搞定 list, dictionary and class 三個概念</li>
+  <li>確保說：在頁面上可以看到資料庫中的資料</li>
+  <li>稍微視覺化資料；不只要單純看到一些數字文字，反而要顯示一個簡單的應用</li>
+  <li>[多餘給強者的部分] 自學會 Week5 的內容重點：透過 form, url, request handler + router 讓使用者輸入新的資料或更改已有的資料</li>
+  <li>[推薦] 花 1-60 分鐘（自己決定啦～）面對本週重點問題</li>
+  <li>花 10 分鐘反思你的學習過程，並且在 README.md 裡面做基本的學習紀錄一下</li>
+</ol>
+
+## Week5
+
+### In class:
+
+
+### Mission
+<ol>
+  <li>這次要新學習的概念： Django 裡面的 Form, Request, URL, GET + POST</li>
+  <li>瞭解：如何從 view 裡面呼叫 Model 來更改資料庫裡面的資料？</li>
+  <li>在網站中增加 Form 來得到使用者的輸入</li>
+  <li>Form 裡面的資料送出去後可以存到資料庫</li>
+  <li>資料庫內容更改後，網頁上面可以看到新的資料</li>
+  <li>確保利用 Postgre 的網站在本機端 還有 Heroku 上面都跑得動</li>
+  <li>了解本週重點問題</li>
 
 
 ## Homework:
