@@ -7,14 +7,14 @@
 ### Week1
 
 > **In class:**
-<ol>
+> <ol>
 >   <li>register Heroku,Github</li>
 >   <li>install Django,Anaconda</li>
 >   <li>learn heroku and git</li>
 > </ol>
 
 > **Mission**
-<ol>
+> <ol>
 >   <li>學會 Command-line 操作基礎</li>
 >   <li>裝好 Heroku + 跑讓本幾段跑出來</li>
 >   <li>把結果 push 到 Github</li>
@@ -24,13 +24,13 @@
 ### Week2
 
 > **In class:**
-<ol>
+> <ol>
 >   <li>live demo last week’s example</li>
 >   <li>basic HTML/CSS</li>
 </ol>
 
 **Mission**
-<ol>
+> <ol>
 >   <li>搞定『全段著手開發的流程』10個步驟
 >    教學影片： https://goo.gl/fJNuYw</li>
 >   <li>學會 HTML + CSS 基礎</li>
@@ -47,7 +47,7 @@
 
 
 > **Mission**
-<ol>
+> <ol>
 >   <li>共學的時候，跟更多同學互動，開始認識大家，記住一些人的名字</li>
 >   <li>學會 Python 基礎</li>
 >   <li>學會 Django Template Language 基礎</li>
