@@ -57,31 +57,35 @@
       color: #383838;
     }
 
-    #new-post {
-        width:60%;
+    .new-post {
+        width:70%;
         position: relative;
         top: 115px;
-        left: 35%;
+        left: 30%;
         text-align: center;
     }
 
-    #new-post .name, .msg, .button {
+    .new-post .name_input, .topic_input, .content_input, .button_input {
         display: inline-block;
-        margin: 30px 15px 50px 15px;
+        margin: 20px 5px 40px 5px;
         padding: 6px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    #new-post input[name=name] {
+    .new-post input[name=user_name] {
+        width: 15%;
+    }
+
+    .new-post input[name=topic] {
+        width: 15%;
+    }
+ 
+    .new-post input[name=content] {
+        width: 45%;
+    }
+ 
+    .new-post input[name=button] {
         width: 10%;
-    }
- 
-    #new-post input[name=msg] {
-        width: 60%;
-    }
- 
-    #new-post input[name=button] {
-        width: 12%;
     }
 
 
@@ -110,11 +114,26 @@
     .content .name {
         font-size: 24px;
         color: #30556E;
-        text-shadow: 1px 0px #FFF;
+        font-weight: bolder;
+        /*text-shadow: 1px 0px #FFF;*/
     }
 
+    .content .topic {
+        font-size: 24px;
+        color: #30556E;
+        /*text-shadow: 1px 0px #FFF;*/
+        font-weight: bolder;
+    }
+
+    .content .topic::before {
+        font-size: 24px;
+        color: #30556E;
+        content: " >> ";
+    }
+
+
     .content p {
-        padding: 5px 0 0 10px;
+        padding: 15px 0 0 20px;
         color: #383838;
     }
 
@@ -150,27 +169,30 @@
         font-size: 16px;
     }
 
-    .new-commend {
+    .new-comment {
         width:100%;
         padding: 5px 20px;
         text-align: left;
     }
     
-    .new-commend input {
+    .new-comment input {
         display: inline-block;
         margin: 15px 0px 15px 5px;
         padding: 2px;
         font-size: 14px;
     }
 
-    .new-commend input[name=name] {
+    .new-comment input[name=talker] {
         width: 10%;
     }
  
-    .new-commend input[name=msg] {
-        width: 60%;
+    .new-comment input[name=msg] {
+        width: 50%;
     }
  
-    .new-commend input[name=button] {
-        width: 10%;
+    .new-comment input[name=button] {
+        width: 6%;
     }
+
+
+

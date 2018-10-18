@@ -11,10 +11,13 @@
   <header>
       <h1>BlaBlaBla</h1>
   </header>
-  <div id="new-post">
-    <input type="text" name="name" class="name" placeholder="暱稱">
-    <input type="text" name="msg" class="msg" placeholder="說點什麼？">
-    <input type="submit" name="button" class="button" value="開啟新討論串">
+  <div class="new-post">
+    <form id="send-new-post" action="." method="post">{% csrf_token %}
+      <input type="text" name="user_name" class="name_input" placeholder="暱稱">
+      <!--<input type="text" name="topic" class="topic_input" placeholder="文章主題">-->
+      <input type="text" name="content" class="content_input" placeholder="說點什麼？">
+      <input type="submit" name="button" class="button_input" value="開啟新討論串">
+    </form>
   </div>
   <div class="index">
     <a href="#B1">B1</a><br>
@@ -30,8 +33,8 @@
   </div>
   <div class="post" id="B1">
     <div class="content">
-      <span class="name"><strong>j**0229</strong></span>
-      <p>【志明與春嬌】<br><br>有一天晚上<br>志明家裡吃咖哩<br>春嬌幫他盛咖哩時<br>加了一匙、一匙、又一匙<br>
+      <span class="name">j**0229</span><!--<span class="topic">志明與春嬌</span>-->
+      <p>有一天晚上<br>志明家裡吃咖哩<br>春嬌幫他盛咖哩時<br>加了一匙、一匙、又一匙<br>
         眼看咖哩就要從碗裡滿出來了<br>這時候志明就對春嬌說<br>哇咖哩尚好就到這</p>
     </div>
       <div class="message">
@@ -42,16 +45,20 @@
         <span class="name"><strong>d*d*5566</strong></span>
         <p>哩對挖已經謀感尬</p>
       </div>
-      <div class="new-commend">
-        <input type="text" name="c.name" class="name" placeholder="暱稱">
-        <input type="text" name="c.msg" class="msg" placeholder="...">
-        <input type="submit" class="c.submit" value="回覆">
+      <div class="new-comment">
+        <!--
+        <form class="send-new-comment" action="." method="post">{% csrf_token %}
+          <input type="text" name="talker" class="name_input" placeholder="暱稱">
+          <input type="text" name="msg" class="msg_input" placeholder="...">
+          <input type="submit" name="button" class="button_input" value="回覆">
+        </form>
+        -->
       </div>
   </div>
   <div class="post" id="B2">
     <div class="content">
       <span class="name"><strong>日座樂灣發比食</strong></span>
-      <p>【我一真燈於相平因成足】<br><br>了利提身，盡也小實心子長地北則比光己清別，<br>本樣濟主使安學就口太母地、變視包有，<br>算目團民參果紅走年提它甚出日們再美灣自士達不可男個知眼計一五。<br>熱些亮，是花喜，情明了於。<br>要得濟預又童動國意不技才等！<br>年充車國的法、任德都即力爭裡。</p>
+      <p>了利提身，盡也小實心子長地北則比光己清別，<br>本樣濟主使安學就口太母地、變視包有，<br>算目團民參果紅走年提它甚出日們再美灣自士達不可男個知眼計一五。<br>熱些亮，是花喜，情明了於。<br>要得濟預又童動國意不技才等！<br>年充車國的法、任德都即力爭裡。</p>
     </div>
       <div class="message">
         <span class="name"><strong>紀是候</strong></span>
@@ -61,28 +68,27 @@
         <span class="name"><strong>年巴易</strong></span>
         <p>會面品生的出科地士三們這心造野了求日座樂灣發比食又香而她十共長書。不我了。</p>
       </div>
-      <div id="new-commend">
-        <input type="text" name="c.name" class="name" placeholder="暱稱">
-        <input type="text" name="c.msg" class="msg" placeholder="...">
-        <input type="submit" class="c.submit" value="回覆">
+      <div class="new-comment">
+          <input type="text" name="talker" class="name_input" placeholder="暱稱">
+          <input type="text" name="msg" class="msg_input" placeholder="...">
+          <input type="submit" name="button" class="button_input" value="回覆">
       </div>
     </div>
   </div>
-  {% for j in db %}
+  {% for j in db_a %}
   <div class="post" id="B3">
     <div class="content">
-      <span class="name"><strong>{{ j.user_name }}</strong></span>
+      <span class="name">{{ j.user_name }}</span><!--<span class="topic">{{ j.topic }}</span>-->
       <p>{{ j.content }}</p>
     </div>
-      <div class="new-commend">
-        <form id="send-form" action="." method="post">
-          <input type="text" name="name" class="name" placeholder="暱稱">
-          <input type="text" name="msg" class="msg" placeholder="...">
-          <input type="submit" name="button" value="回覆">
-      </form>
+      <div class="new-comment">
+          <input type="text" name="talker" class="name_input" placeholder="暱稱">
+          <input type="text" name="msg" class="msg_input" placeholder="...">
+          <input type="submit" name="button" name="button_input" value="回覆">
       </div>
   </div>
   {% endfor %}
+
 </body>
 
 </html>

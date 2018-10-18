@@ -1,0 +1,28 @@
+* {
+        padding: 0;
+        margin: 0;
+        background-color: #30556E;
+    }
+
+    p {
+    	position: absolute;
+      	/*height: 100%;*/
+      	width: 100%;
+    	font-size: 84px;
+    	font-weight: bolder;
+    	top: calc(50% - 80px);
+      	text-align: center;
+      	color: #FFF;
+    }
+
+    a {
+    	position: absolute;
+      	/*height: 100%;*/
+      	width: 100%;
+      	background-color: transparent;
+      	z-index: 2;
+    	font-size: 32px;
+    	top: calc(50% + 25px);
+      	text-align: center;
+      	color: #FFF;
+    }

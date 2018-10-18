@@ -7,10 +7,7 @@ import random, datetime
 from guestbook.models import Article, Message
 
 
-def index(request):
-	
-	a1 = Article.objects.create(user_name = '期中崩潰人', content = '廢文連發 '+str(datetime.datetime.now()))
-	db = Article.objects.all()
+def chat(request):
 
 	destiny = {
 	    'love': ["晚上約朋友一起吃飯，分享食物的瞬間會讓彼此的情誼更加深厚。",
@@ -28,9 +25,9 @@ def index(request):
 			     "曾相互糾纏、相互傷害的情侶在一段時間的冷靜和反省後，這段感情能重新看到新希望，找到新的相處模式。",
 			 	 "感情趨於平淡，相處多年的戀人並沒有結婚的打算，仍將對方定為考察對象，要求別太高。"],
 		'work': ["工作上的努力，可獲得上司的獎勵，讓你小有成就感。",
-		     	 "今天的工作進度過於緩慢，心裡有點著急，但幸好會獲得同事的諒解，並得到他們的幫助。",
 		         "財運不順，出門得當心，最好不要隨身攜帶貴重物品。",
 		    	 "對自己不精的領域少插手為妙，不然遭遇挫折會使心情產生動盪。",
+		     	 "今天的工作進度過於緩慢，心裡有點著急，但幸好會獲得同事的諒解，並得到他們的幫助。",
 		   	     "找一個安靜的地方小坐片刻，把混亂的思緒理清才是當務之急。",
 		         "事業上有重操舊業的好時機，發展趨勢良好。",
 		   		 "求職者易從眾多求職者中脫穎而出，得到期待已久的工作機會。",
@@ -51,5 +48,14 @@ def index(request):
 		    	 "工作能力會有較大提升，頗受好評。"]}
 	destiny = random.sample(destiny['love'],2) + random.sample(destiny['work'],2)
 
+	db_a = Article.objects.all()
+	if request.POST:
+		user_name = request.POST['user_name']
+		#topic = request.POST['topic']
+		content = request.POST['content']
+		a = Article.objects.create(user_name=user_name, content=content)
 												  #{'destiny':destiny}
 	return render(request, 'lanlanblablabla.html',locals())
+
+def index(request):
+	return render(request, 'home.html')
