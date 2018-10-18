@@ -4,16 +4,16 @@
 
 嗨，我是鄭羽嵐，今年心理系大三的學生。
 
-### Week1
+## Week1
 
-> **In class:**
+### In class:
 > <ol>
 >   <li>register Heroku,Github</li>
 >   <li>install Django,Anaconda</li>
 >   <li>learn heroku and git</li>
 > </ol>
 
-> **Mission**
+### Mission
 > <ol>
 >   <li>學會 Command-line 操作基礎</li>
 >   <li>裝好 Heroku + 跑讓本幾段跑出來</li>
@@ -21,15 +21,15 @@
 >   <li>finish the class assignment</li>
 </ol>
 
-### Week2
+## Week2
 
-> **In class:**
+### In class:
 > <ol>
 >   <li>live demo last week’s example</li>
 >   <li>basic HTML/CSS</li>
 </ol>
 
-**Mission**
+### Mission
 > <ol>
 >   <li>搞定『全段著手開發的流程』10個步驟
 >    教學影片： https://goo.gl/fJNuYw</li>
@@ -41,12 +41,12 @@
 >   <li>了解本週的重點問題
 </ol>
 
-### Week3
+## Week3
 
-> **In class:**
+### In class:
 
 
-> **Mission**
+### Mission
 > <ol>
 >   <li>共學的時候，跟更多同學互動，開始認識大家，記住一些人的名字</li>
 >   <li>學會 Python 基礎</li>
