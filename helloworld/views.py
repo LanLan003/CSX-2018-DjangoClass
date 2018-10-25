@@ -27,7 +27,7 @@ def register(request):
 			user = User.objects.create_user(username, email, password)
 			user.save()
 			message = "註冊成功"
-			return render_to_response('/login/')
+			return redirect('/login/')
 	return render(request, 'register.html', locals())
 
 def login(request):
