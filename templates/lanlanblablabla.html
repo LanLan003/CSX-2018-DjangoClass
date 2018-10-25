@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
-{% load  staticfiles %}
+<!--{% load  staticfiles %}-->
+<!-- {% load static %} -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,8 +14,8 @@
   </header>
   <div class="new-post">
     <form id="send-new-post" action="." method="post">{% csrf_token %}
-      <input type="text" name="user_name" class="name_input" placeholder="暱稱">
-      <!--<input type="text" name="topic" class="topic_input" placeholder="文章主題">-->
+      <input type="text" name="username" class="name_input" placeholder="暱稱">
+      <input type="text" name="topic" class="topic_input" placeholder="文章主題">
       <input type="text" name="content" class="content_input" placeholder="說點什麼？">
       <input type="submit" name="button" class="button_input" value="開啟新討論串">
     </form>
@@ -24,7 +25,7 @@
     <a href="#B2">B2</a>
   </div>
   <div class="destiny">
-    <p class="title"><strong>本日運勢</strong></p>
+    <p class="title">本日運勢</p>
     <p class="random">
       {% for item in destiny %}
           {{ item }}
@@ -33,7 +34,7 @@
   </div>
   <div class="post" id="B1">
     <div class="content">
-      <span class="name">j**0229</span><!--<span class="topic">志明與春嬌</span>-->
+      <span class="name">j**0229</span><span class="topic">志明與春嬌</span>
       <p>有一天晚上<br>志明家裡吃咖哩<br>春嬌幫他盛咖哩時<br>加了一匙、一匙、又一匙<br>
         眼看咖哩就要從碗裡滿出來了<br>這時候志明就對春嬌說<br>哇咖哩尚好就到這</p>
     </div>
@@ -45,14 +46,18 @@
         <span class="name"><strong>d*d*5566</strong></span>
         <p>哩對挖已經謀感尬</p>
       </div>
+      {% for c in db_c %}
+      <div class="message">
+        <span class="name"><strong>{{ c.talker }}</strong></span>
+        <p>{{ c.msg }}</p>
+      </div>
+      {% endfor %}
       <div class="new-comment">
-        <!--
         <form class="send-new-comment" action="." method="post">{% csrf_token %}
           <input type="text" name="talker" class="name_input" placeholder="暱稱">
           <input type="text" name="msg" class="msg_input" placeholder="...">
           <input type="submit" name="button" class="button_input" value="回覆">
         </form>
-        -->
       </div>
   </div>
   <div class="post" id="B2">
@@ -68,23 +73,39 @@
         <span class="name"><strong>年巴易</strong></span>
         <p>會面品生的出科地士三們這心造野了求日座樂灣發比食又香而她十共長書。不我了。</p>
       </div>
+      {% for c in db_c %}
+      <div class="message">
+        <span class="name"><strong>{{ c.talker }}</strong></span>
+        <p>{{ c.msg }}</p>
+      </div>
+      {% endfor %}
       <div class="new-comment">
+        <form class="send-new-comment" action="." method="post">{% csrf_token %}
           <input type="text" name="talker" class="name_input" placeholder="暱稱">
           <input type="text" name="msg" class="msg_input" placeholder="...">
           <input type="submit" name="button" class="button_input" value="回覆">
+        </form>
       </div>
     </div>
   </div>
-  {% for j in db_a %}
+  {% for a in db_a %}
   <div class="post" id="B3">
     <div class="content">
-      <span class="name">{{ j.user_name }}</span><!--<span class="topic">{{ j.topic }}</span>-->
-      <p>{{ j.content }}</p>
+      <span class="name">{{ a.user_name }}</span><span class="topic">{{ a.topic }}</span>
+      <p>{{ a.content }}</p>
     </div>
+      {% for c in db_c %}
+      <div class="message">
+        <span class="name"><strong>{{ c.talker }}</strong></span>
+        <p>{{ c.msg }}</p>
+      </div>
+      {% endfor %}
       <div class="new-comment">
+        <form class="send-new-comment" action="." method="post">{% csrf_token %}
           <input type="text" name="talker" class="name_input" placeholder="暱稱">
           <input type="text" name="msg" class="msg_input" placeholder="...">
-          <input type="submit" name="button" name="button_input" value="回覆">
+          <input type="submit" name="button" class="button_input" value="回覆">
+        </form>
       </div>
   </div>
   {% endfor %}
