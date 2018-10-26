@@ -43,7 +43,7 @@ def login(request):
 
 def logout(request):
     auth.logout(request)
-    return HttpResponseRedirect('//')
+    return HttpResponseRedirect('/')
 
 def hello(request):
     return render(request, 'hello.html',locals())
