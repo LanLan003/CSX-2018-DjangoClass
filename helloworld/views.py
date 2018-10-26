@@ -4,54 +4,12 @@ from django.contrib import auth
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 import random, datetime
-from guestbook.models import Article, Message
+from chat.models import Article, Message
 
 
 
 def index(request):
 	return render(request, 'home.html')
-
-def register(request):
-	if request.method == 'POST':
-		username = request.POST.get('username')
-		password = request.POST.get('password')
-		email = request.POST.get('email', False)
-
-		try:
-			user = User.objects.get(username=username)
-		except:
-			user = None
-		if user is not None:
-			message = '此使用者已經有人使用'
-		else:
-			user = User.objects.create_user(username, email, password)
-			user.save()
-			message = "註冊成功"
-			return redirect('/login/')
-	return render(request, 'register.html', locals())
-
-def login(request):
-	if request.method == 'POST':
-		username = request.POST.get('username')
-		password = request.POST.get('password')
-		user = auth.authenticate(username=username, password=password)
-		if user is not None:
-			if user.is_active:
-				auth.login(request,user)
-				message = '登入成功!'
-				return redirect('/chat/')
-			else:
-				message = '帳號尚未啟用!'
-		else:
-			message = '登入失敗!'
-	return render(request,"login.html",locals())
-
-def logout(request):
-    auth.logout(request)
-    return HttpResponseRedirect('//')
-
-def hello(request):
-    return render_to_response('hello.html',locals())
 
 def chat(request):
 	destiny = {
@@ -97,13 +55,12 @@ def chat(request):
 	db_c = Message.objects.all()
 	if request.POST:
 		try:
-			username = request.POST.get('username', None)
-			topic = request.POST.get('topic', )
+			name = request.POST.get('name')
+			topic = request.POST.get('topic', None)
 			content = request.POST.get('content')
-			a = Article.objects.create(user_name=user_name, topic=topic, content=content)
+			a = Article.objects.create(name=name, topic=topic, content=content)
 		except:
 			talker = request.POST.get('talker')
 			msg = request.POST.get('msg')
 			c = Message.objects.create(talker=talker, msg=msg)
-												  #{'destiny':destiny}
 	return render(request, 'lanlanblablabla.html',locals())

@@ -9,11 +9,16 @@
         <!--<link href="{% static 'css/style_hellopage.css' %}" rel="stylesheet" type="text/css" />-->
     </head>
     <body>
-        {% if request.user.is_authenticated %}
-            <p>{{request.user}} 您已經登入囉!</p>
-            <a href="/logout/">登出</a>
-        {% else %}
-            <p>您尚未登入!<a href="/login/">登入</a></p>
-        {% endif %}
+        <div>
+            {% if request.user.is_authenticated %}
+                <p>{{request.user}} 您已經登入囉!</p>
+                <a href="/logout/">登出</a>
+            {% else %}
+                <p>您尚未登入!<a href="/login/">登入</a></p>
+            {% endif %}
+        </div>
+        <div>
+            <a href="/chat/">聊聊！</a>
+        </div>
     </body>
 </html>

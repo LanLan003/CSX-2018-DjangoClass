@@ -14,7 +14,7 @@
   </header>
   <div class="new-post">
     <form id="send-new-post" action="." method="post">{% csrf_token %}
-      <input type="text" name="username" class="name_input" placeholder="暱稱">
+      <input type="text" name="name" class="name_input" placeholder="暱稱">
       <input type="text" name="topic" class="topic_input" placeholder="文章主題">
       <input type="text" name="content" class="content_input" placeholder="說點什麼？">
       <input type="submit" name="button" class="button_input" value="開啟新討論串">
@@ -91,7 +91,7 @@
   {% for a in db_a %}
   <div class="post" id="B3">
     <div class="content">
-      <span class="name">{{ a.user_name }}</span><span class="topic">{{ a.topic }}</span>
+      <span class="name">{{ a.name }}</span><span class="topic">{{ a.topic }}</span>
       <p>{{ a.content }}</p>
     </div>
       {% for c in db_c %}

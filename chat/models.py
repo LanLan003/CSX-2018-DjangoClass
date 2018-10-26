@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 class Article(models.Model):
-	user_name = models.CharField(max_length=10, blank=False)
+	name = models.CharField(max_length=10, blank=False)
 	topic = models.CharField(max_length=20, blank=False)
 	content = models.TextField(max_length=256, blank=False)
 	#time = models.DateTimeField(default=datetime.now, blank=True)
