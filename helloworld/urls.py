@@ -25,6 +25,6 @@ urlpatterns = [
     path('logout/',lviews.logout),
     path('hello/',lviews.hello),
     path('chat/',views.chat),
-    #path('chat/search/',views.search),
+    path('personalpage/',views.personalpage),
     path('register/',lviews.register),
 ]

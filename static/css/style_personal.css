@@ -75,40 +75,8 @@
       color: #383838;
     }
 
-    .new-post {
-        width:70%;
-        position: relative;
-        top: 115px;
-        left: 30%;
-        text-align: center;
-    }
-
-    .new-post .name_input, .topic_input, .content_input, .button_input {
-        display: inline-block;
-        margin: 20px 5px 40px 5px;
-        padding: 6px;
-        font-size: 16px;
-    }
-
-    .new-post input[name=user_name] {
-        width: 20%;
-    }
-
-    /*.new-post input[name=topic] {
-        width: 15%;
-    }*/
- 
-    .new-post input[name=content] {
-        width: 60%;
-    }
- 
-    .new-post input[name=button] {
-        width: 10%;
-    }
-
-
     .post {
-        top: 100px;
+        top: 120px;
         width: 900px;
         height: auto;
         margin: 20px 32%;
@@ -155,6 +123,22 @@
         color: #383838;
     }
 
+    .revise {
+      display: inline-block;
+      padding: 20px;
+      width: 80%;
+    }
+    
+    .reviseT {
+      font-size: 14px;
+      padding: 5px;
+      width: 80%;
+    }
+
+    .reviseB {
+      font-size: 14px;
+      padding: 5px;
+    }
  
     .message {
         width: 95%;
@@ -185,31 +169,6 @@
     .message > p {
         display: inline-block;
         font-size: 16px;
-    }
-
-    .new-comment {
-        width:100%;
-        padding: 5px 20px;
-        text-align: left;
-    }
-    
-    .new-comment input {
-        display: inline-block;
-        margin: 15px 0px 15px 5px;
-        padding: 2px;
-        font-size: 14px;
-    }
-
-    /*.new-comment input[name=talker] {
-        width: 10%;*/
-    }
- 
-    .new-comment input[name=msg] {
-        width: 60%;
-    }
- 
-    .new-comment input[name=button] {
-        width: 6%;
     }
 
 

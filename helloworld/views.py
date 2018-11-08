@@ -63,9 +63,7 @@ def chat(request):
 			except:
 				talker = request.POST.get('talker')
 				msg = request.POST.get('msg')
-				c = Message.objects.create(talker=talker, msg=msg)
-			else:
-				revise = request.POST.get('revise')
+				c = Message.objects.create(talker=request.user, msg=msg)
 		if request.GET:
 			search = request.GET.get('search')
 			db_a = Article.objects.filter(content__contains=search)
@@ -74,8 +72,8 @@ def chat(request):
 	else:
 		return redirect('/login/')
 
-"""
-def search(request):
+
+def personalpage(request):
 	if request.user.is_authenticated:
 		destiny = {
 	    'love': ["晚上約朋友一起吃飯，分享食物的瞬間會讓彼此的情誼更加深厚。",
@@ -115,13 +113,21 @@ def search(request):
 		    	 "太專注於賺錢，讓自己的身體有點吃不消，多注意一下自己的飲食習慣。",
 		    	 "工作能力會有較大提升，頗受好評。"]}
 		destiny = random.sample(destiny['love'],2) + random.sample(destiny['work'],2)
-	
-	if request.GET:
+		db_a = Article.objects.filter(name=request.user)
+		db_c = Message.objects.filter(talker=request.user)
+		if request.POST:
+			try:
+				revise = request.POST.get('revise')
+				origin = request.POST.get('origin')
+				old = Article.objects.filter(content=origin)
+				old.update(content=revise)
+			except:
+				revise = request.POST.get('delete')
+				old = Article.objects.filter(content=origin)
+				old.delete()
+		if request.GET:
 			search = request.GET.get('search')
 			db_a = Article.objects.filter(content__contains=search)
-			return redirect('/chat/search/')
-
 	else:
 		return redirect('/login/')
-	return render(request, 'search.html')
-"""
+	return render(request, 'personalpage.html',locals())

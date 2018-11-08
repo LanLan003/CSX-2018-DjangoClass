@@ -18,7 +18,7 @@
         <input type="submit" class="searchB" value="搜 尋">
       </form>
     </li>
-    <li><span id="username">{{request.user}}</span></li>
+    <li><a id="username"href="/personalpage/">{{request.user}}</a></li>
     <li><a id="logout" href="/logout/">登出</button></a></li>
   </ul>
   </nav>
@@ -100,14 +100,12 @@
       <span class="name">{{ a.name }}</span><span class="topic">{{ a.topic }}</span>
       <p>
         {{ a.content }}
-        <!--{% if a.name == request.user %}-->
-        
+        {% if a.name == request.user %}
           <form action="." method="post">{% csrf_token %}
             <input type="text" name="revise" class="reviseT" placeholder="編輯貼文">
             <input type="submit" class="reviseB" value="送出">
           </form>
-        <!--{% endif %}-->
-
+        {% endif %}
       </p>
     </div>
       {% for c in db_c %}
@@ -118,7 +116,7 @@
       {% endfor %}
       <div class="new-comment">
         <form class="send-new-comment" action="." method="post">{% csrf_token %}
-          <input type="text" name="talker" class="name_input" placeholder="暱稱">
+          <!--<input type="text" name="talker" class="name_input" placeholder="暱稱">-->
           <input type="text" name="msg" class="msg_input" placeholder="...">
           <input type="submit" name="button" class="button_input" value="回覆">
         </form>
