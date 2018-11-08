@@ -10,8 +10,7 @@ def register(request):
 	if request.method == 'POST':
 		username = request.POST.get('username')
 		password = request.POST.get('password')
-		email = request.POST.get('email', False)
-
+		email = request.POST.get('email', False) 
 		try:
 			user = User.objects.get(username=username)
 		except:
@@ -26,6 +25,8 @@ def register(request):
 	return render(request, 'register.html', locals())
 
 def login(request):
+	if request.user.is_authenticated: 
+		return HttpResponseRedirect('/chat/')
 	if request.method == 'POST':
 		username = request.POST.get('username')
 		password = request.POST.get('password')
@@ -42,8 +43,8 @@ def login(request):
 	return render(request,"login.html",locals())
 
 def logout(request):
-    auth.logout(request)
-    return HttpResponseRedirect('/')
+	auth.logout(request)
+	return HttpResponseRedirect('/')
 
 def hello(request):
-    return render(request, 'hello.html',locals())
+	return render(request, 'hello.html',locals())

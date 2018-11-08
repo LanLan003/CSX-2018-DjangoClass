@@ -11,14 +11,20 @@
     <body>
         <div>
             {% if request.user.is_authenticated %}
-                <p>{{request.user}} 您已經登入囉!</p>
-                <a href="/logout/">登出</a>
+                <p><span class="username">{{request.user}}</span> 您已經登入囉!</p>
+                <a href="/logout/">
+                    <button>登出</button>
+                </a>
             {% else %}
-                <p>您尚未登入!<a href="/login/">登入</a></p>
+                <p>您尚未登入!
+                    <a href="/login/">
+                        <button>登入</button>
+                    </a>
+                </p>
             {% endif %}
         </div>
         <div>
-            <a href="/chat/">聊聊！</a>
+            <a href="/chat/">去聊聊→</a>
         </div>
     </body>
 </html>

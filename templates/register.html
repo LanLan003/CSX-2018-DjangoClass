@@ -4,7 +4,7 @@
 <!-- {% load static %} -->
 <head>
     <title>註冊頁面</title>
-    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -19,6 +19,9 @@
             <input type="submit" name="button" id="button" value="送出" />
         </div>
     </form>
+    <a href="/login/">
+        <button>登入</button>
+    </a>
     <span style="color: red">{{message}}</span>
  
 </body>

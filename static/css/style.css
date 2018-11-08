@@ -3,41 +3,59 @@
         margin: 0;
     }
 
-
-    header {
-      position: fixed;
-      height: 100px;
-      width: 100%;
-      z-index: 2;
+    nav {
       background-color: #30556E;
+      position: fixed;
+      width: 100%;
+      height: 100px;
+      z-index: 2;
     }
 
-    header h1 {
+    nav li {
+      display: inline-block;
+    }
+
+    nav h1 {
       font-size: 52px;
-      height: 100px;
-      width: 100%;
+      width: 30%;
       box-sizing: border-box;
-      padding: 10px 32px;
+      padding: 10px 20px;
+      buttom: calc(30%);
+      color: #FFF;
+    }
+    
+    nav .searchT {
+      font-size: 18px;
+      padding: 6px;
+      width: 400px;
+      right: calc(50%);
+    }
+
+    nav .searchB {
+      font-size: 18px;
+      padding: 12px;
+      height: 30px;
+      width: 50px;
+    }
+
+    #username {
+      font-size: 24px;
+      height: 100px;
+      width: 15%;
+      margin: 100px 32px;
       color: #FFF;
     }
 
-    .index {
-      height: 70px;
-      width: 300px;
-      position: fixed;
-      top: 85px;
-      margin: 60px 40px;
-      padding: 30px;
-      font-size: 18px;
-      border: 3px dotted;
-      border-radius: 7px;
-      border-color: #77c8fe;
+    #logout {
+      text-decoration: none;
+      font-size: 20px;
+      color: #FFF;
     }
 
     .destiny {
       width: 310px;
       position: fixed;
-      top: 235px;
+      top: 85px;
       margin: 60px 40px;
       padding: 25px;
       border: 3px dotted;
@@ -74,15 +92,15 @@
     }
 
     .new-post input[name=user_name] {
-        width: 15%;
+        width: 20%;
     }
 
-    .new-post input[name=topic] {
+    /*.new-post input[name=topic] {
         width: 15%;
-    }
+    }*/
  
     .new-post input[name=content] {
-        width: 45%;
+        width: 60%;
     }
  
     .new-post input[name=button] {
