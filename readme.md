@@ -7,6 +7,12 @@
 ## 應用資源：
 總之找個地方丟著就對了XDD
 
+#### Always會用到的助教投影片QQ：
+<ol>
+  <li><b>全段著手開發的流程</b>：  https://docs.google.com/presentation/d/1cMKatsT5Cp580ghxtYdTWKE03nbcHdVwKVk3Miyl2YI/edit#slide=id.g42c94c5ac4_0_8</li>
+  <li><b>Django x PostgreSQL x Heroku教學</b>：  https://docs.google.com/presentation/d/1na4G7xXNmReeTuwU35q-jt4LeOwF_jfP7KaN-hsIVHY/edit#slide=id.p</li>
+</ol>
+
 #### 視覺呈現:
 <ol>
   <li><b>Bootstrap</b>：  http://getbootstrap.com/</li>
@@ -19,10 +25,18 @@
 #### Coding學習資源：
 <ol>
   <li><b>Django Project</b>：  https://www.djangoproject.com/</li>
+  <li><b>DOKELUNG'S BLOG</b>：  http://dokelung-blog.logdown.com/</li>
+  <li><b>Django Project</b>：  https://www.djangoproject.com/</li>
   <li><b>W3schools</b>：  https://www.w3schools.com/</li>
   <li><b>Konva</b>：  https://konvajs.github.io/ / https://konvajs.github.io/api/Konva.html</li>
   <li><b>Udacity</b>：  https://www.udacity.com/</li>
 </ol>
+
+#### 其他工具：
+<ol>
+  <li><b>Homebrew</b>：  https://brew.sh/index_zh-tw （在terminal安裝各種套件）</li>
+</ol>
+
 
 
 
