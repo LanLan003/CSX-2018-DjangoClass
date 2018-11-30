@@ -20,6 +20,7 @@
   <li><b>Marvel</b>：  https://marvelapp.com/</li>
   <li><b>Sketchapp</b>：  https://www.sketchapp.com/</li>
   <li><b>SASS / iT邦幫忙</b>：  https://ithelp.ithome.com.tw/articles/10126703</li>
+  <li><b>響應式網頁設計教學</b>：  https://www.youtube.com/watch?v=_NapocY7HZ4</li>
 </ol>
 
 #### Coding學習資源：
