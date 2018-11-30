@@ -5,15 +5,22 @@
 嗨，我是鄭羽嵐，今年心理系大三的學生。
 
 ## 應用資源：
+總之找個地方丟著就對了XDD
 
-#### CSS:
+#### 視覺呈現:
 <ol>
   <li><b>Bootstrap</b>：  http://getbootstrap.com/</li>
   <li><b>Free CSS</b>：  https://www.free-css.com/</li>
+  <li><b>Marvel</b>：  https://marvelapp.com/</li>
+  <li><b>Sketchapp</b>：  https://www.sketchapp.com/</li>
+  <li><b>SASS / iT邦幫忙</b>：  https://ithelp.ithome.com.tw/articles/10126703</li>
 </ol>
 
-#### 學習coding：
+#### Coding學習資源：
 <ol>
+  <li><b>Django Project</b>：  https://www.djangoproject.com/</li>
+  <li><b>W3schools</b>：  https://www.w3schools.com/</li>
+  <li><b>Konva</b>：  https://konvajs.github.io/ / https://konvajs.github.io/api/Konva.html</li>
   <li><b>Udacity</b>：  https://www.udacity.com/</li>
 </ol>
 
