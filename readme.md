@@ -4,6 +4,21 @@
 
 嗨，我是鄭羽嵐，今年心理系大三的學生。
 
+## 應用資源：
+
+#### CSS:
+<ol>
+  <li><b>Bootstrap</b>：  http://getbootstrap.com/</li>
+  <li><b>Free CSS</b>：  https://www.free-css.com/</li>
+</ol>
+
+#### 學習coding：
+<ol>
+  <li><b>Udacity</b>：  https://www.udacity.com/</li>
+</ol>
+
+
+
 ## Week1
 
 #### In class:
